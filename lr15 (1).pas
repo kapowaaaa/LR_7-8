@@ -1,0 +1,21 @@
+﻿program lr7_8_15;
+var
+  o: string;
+  m: string;
+  i: integer;
+begin
+ writeln('Введите текст');
+ readln(o);
+  m:= o[1:4];
+  i := 4;
+  while i <= Length(o) do
+  begin
+    if (o[i] = 'x')and (o[i-3] = 'a') and (o[i-2] = 'b')and (o[i-1] = 'c') then
+    else
+    begin
+      m := m + o[i];
+    end;
+    i := i + 1;
+  end;
+  writeln(m);
+end.
